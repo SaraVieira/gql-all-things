@@ -31,7 +31,6 @@ const Bar = styled.div`
 export default class Provider extends Component {
   render() {
     const { children, mode, index, length, update } = this.props
-    console.log(this.props)
 
     if (mode !== modes.normal) {
       return <Fragment>{children}</Fragment>

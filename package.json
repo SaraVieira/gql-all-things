@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx"
+    "build": "mdx-deck build deck.mdx",
+    "format": "prettier --write '**/*.js'",
+    "posttest": "npm run format"
   },
   "author": "Sara Vieira",
   "now": {
@@ -15,6 +17,7 @@
   "devDependencies": {
     "file-loader": "^2.0.0",
     "mdx-deck": "1.7.0",
+    "prettier": "^1.14.2",
     "raw-loader": "^0.5.1"
   },
   "dependencies": {
