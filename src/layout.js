@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
+import Footer from './footer'
 
 const Wrapper = styled.main`
   width: 100vw;
@@ -11,24 +12,10 @@ const Wrapper = styled.main`
   position: relative;
 `
 
-const Footer = styled.footer`
-  font-size: 14px;
-  color: white;
-  padding: 30px 100px;
-  text-align: right;
-  width: 100vw;
-  border-top: 1px solid #dc5f53;
-  display: flex;
-  justify-content: space-between;
-`
-
 const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
-    <Footer>
-      <span>React Native EU 🇵🇱</span>
-      <span>@NIkkitaFTW</span>
-    </Footer>
+    <Footer />
   </Fragment>
 )
 

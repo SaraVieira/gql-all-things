@@ -1,18 +1,16 @@
 // example theme.js
 import theme from 'mdx-deck/themes'
-import atomDark from 'react-syntax-highlighter/styles/prism/atom-dark'
+import Provider from './Provider'
 
 export default {
   ...theme,
   font: 'Futura, sans-serif',
+  Provider,
   h1: {
     textTransform: 'uppercase',
     fontWeight: 600
   },
   monospace: '"Dank Mono", monospace',
-  prism: {
-    style: atomDark
-  },
   img: {
     maxWidth: '100%'
   },

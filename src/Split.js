@@ -2,19 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Flex from 'mdx-deck/dist/Flex'
 import Box from 'mdx-deck/dist/Box'
-
-const Footer = styled.footer`
-  font-size: 14px;
-  color: white;
-  padding: 30px 100px;
-  text-align: right;
-  width: 100vw;
-  border-top: 1px solid #dc5f53;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-`
+import Footer from './footer'
 
 const Root = styled.div([], {
   width: '100vw',
@@ -45,10 +33,6 @@ const Split = ({ children }) => {
           </Half>
         ))}
       </Flex>
-      <Footer>
-        <span>React Native EU 🇵🇱</span>
-        <span>@NIkkitaFTW</span>
-      </Footer>
     </Root>
   )
 }
