@@ -1,5 +1,5 @@
-# Stop The #divFest
+# GQL ALL THE THINGS
 
-Talk for State of The Browser 2018
+Talk for React Native EU
 
 ...
