@@ -226,10 +226,6 @@ ajv@^6.1.0:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-animate-css-styled-components@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/animate-css-styled-components/-/animate-css-styled-components-1.0.0.tgz#93531a0254558f466ca169e0fbb4efcd8d109c63"
-
 ansi-colors@^3.0.0:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.0.5.tgz#cb9dc64993b64fd6945485f797fc3853137d9a7b"
@@ -3118,9 +3114,9 @@ mdx-deck-code-surfer@^0.4.0:
   dependencies:
     code-surfer "^0.3.0"
 
-mdx-deck@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/mdx-deck/-/mdx-deck-1.7.0.tgz#dfbe44cf0f4154f165889619460c4eedd3e5765f"
+mdx-deck@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/mdx-deck/-/mdx-deck-1.7.1.tgz#e06f3609e3e1ebe67769eb4aa5d7306d7be02fe0"
   dependencies:
     "@compositor/webfont" "^1.0.39"
     "@mdx-js/mdx" "^0.15.0"

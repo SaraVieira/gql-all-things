@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import Footer from './footer'
 
 const Wrapper = styled.main`
   width: 100vw;
@@ -12,11 +11,6 @@ const Wrapper = styled.main`
   position: relative;
 `
 
-const Layout = ({ children }) => (
-  <Fragment>
-    <Wrapper>{children}</Wrapper>
-    <Footer />
-  </Fragment>
-)
+const Layout = ({ children }) => <Wrapper>{children}</Wrapper>
 
 export default Layout

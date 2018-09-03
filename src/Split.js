@@ -15,27 +15,28 @@ const Half = styled(Box)`
     max-width: 100%;
     transform: none !important;
     left: 0 !important;
+    top: 0 !important;
   }
+`
+
+const Wrapper = styled(Flex)`
+  align-items: center;
+  height: 100%;
 `
 
 const Split = ({ children }) => {
   const kids = React.Children.toArray(children.props.children)
-  const times = kids.length
+  const numberOfChildren = kids.length
 
   return (
     <Root>
-      <Flex
-        css={{
-          alignItems: 'center',
-          height: '100%'
-        }}
-      >
+      <Wrapper>
         {kids.map(k => (
-          <Half key={k} width={1 / times}>
+          <Half key={k.key} width={1 / numberOfChildren}>
             {k}
           </Half>
         ))}
-      </Flex>
+      </Wrapper>
     </Root>
   )
 }

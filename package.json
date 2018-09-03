@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "build": "mdx-deck build deck.mdx --no-html",
     "format": "prettier --write '**/*.js'",
     "posttest": "npm run format"
   },
@@ -16,12 +16,11 @@
   "license": "MIT",
   "devDependencies": {
     "file-loader": "^2.0.0",
-    "mdx-deck": "1.7.0",
+    "mdx-deck": "1.7.1",
     "prettier": "^1.14.2",
     "raw-loader": "^0.5.1"
   },
   "dependencies": {
-    "animate-css-styled-components": "^1.0.0",
     "graphql": "^14.0.0",
     "graphql-anywhere": "^4.1.18",
     "graphql-tag": "^2.9.2",

@@ -4,20 +4,19 @@ import Provider from './Provider'
 
 export default {
   ...theme,
-  font: 'Futura, sans-serif',
+  font: '"Raleway", sans-serif',
   Provider,
   h1: {
     textTransform: 'uppercase',
-    fontWeight: 600
+    fontWeight: 900
   },
   h2: {
     color: 'white'
   },
   p: {
     color: 'white',
-    fontFamily: 'Avenir, arial',
-    fontSize: '39px',
-    fontStyle: 'italic'
+    fontFamily: '"Raleway", arial',
+    fontSize: '39px'
   },
   monospace: '"Dank Mono", monospace',
   weights: 400,
@@ -27,7 +26,7 @@ export default {
   },
   li: {
     paddingBottom: '20px',
-    fontFamily: 'Avenir, arial',
+    fontFamily: '"Raleway", arial',
     color: 'white',
     fontSize: '30px',
     lineHeight: 1.5

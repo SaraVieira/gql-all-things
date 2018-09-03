@@ -13,6 +13,7 @@ const Bottom = styled.div([], {
 })
 
 injectGlobal`
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
     img {
         position: relative;
         max-height: 90vh;
