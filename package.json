@@ -24,6 +24,7 @@
     "graphql": "^14.0.0",
     "graphql-anywhere": "^4.1.18",
     "graphql-tag": "^2.9.2",
+    "lodash": "^4.17.10",
     "mdx-deck-code-surfer": "^0.4.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

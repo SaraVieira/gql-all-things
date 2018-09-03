@@ -1,4 +1,3 @@
-// example theme.js
 import theme from 'mdx-deck/themes'
 import Provider from './Provider'
 
@@ -38,9 +37,6 @@ export default {
   colors: {
     text: '#6AD798',
     background: 'rgb(1, 22, 39)',
-    link: '#fff',
-    pre: '#fff',
-    preBackground: '#051626',
-    code: '#fff'
+    link: '#fff'
   }
 }
