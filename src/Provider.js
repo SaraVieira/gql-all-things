@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react'
-import styled from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 import Dots from 'mdx-deck/dist/Dots'
 import { previous, next } from 'mdx-deck/dist/updaters'
 import { modes } from 'mdx-deck/dist/constants'
@@ -11,6 +11,18 @@ const Bottom = styled.div([], {
   right: 0,
   bottom: 0
 })
+
+injectGlobal`
+    img {
+        position: relative;
+        max-height: 90vh;
+        max-width: 100%;
+        width: auto !important;
+        left: 50% !important;
+        top: 50vh !important;
+        transform: translateY(-50%) translateX(-50%) !important;
+    }
+`
 
 const Wrapper = styled.main`
   width: 100vw;

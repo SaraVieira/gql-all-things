@@ -6,14 +6,14 @@ import { GET_MODAL } from './queries'
 export default () => (
   <div>
     <Query query={GET_MODAL}>
-      {({ loading, error, modal: { modalIsOpen } }) => {
+      {({ loading, error, modal: { modalvisible } }) => {
         if (loading) {
-          return 'loading man. Chill'
+          return <Text>'loading'</Text>
         }
-        if (error) return `Error!: ${error}`
+        if (error) return <Text>`Error!: ${error}`</Text>
         return (
-          <Modal isOpen={modalIsOpen}>
-            <h1>Of course they do </h1>
+          <Modal visible={modalvisible}>
+            <Text>Of course they do </Text>
           </Modal>
         )
       }}

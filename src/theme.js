@@ -10,18 +10,30 @@ export default {
     textTransform: 'uppercase',
     fontWeight: 600
   },
+  h2: {
+    color: 'white'
+  },
+  p: {
+    color: 'white',
+    fontFamily: 'Avenir, arial',
+    fontSize: '39px',
+    fontStyle: 'italic'
+  },
   monospace: '"Dank Mono", monospace',
+  weights: 400,
   img: {
+    maxHeight: '80vh',
     maxWidth: '100%'
   },
-  weights: 400,
   li: {
     paddingBottom: '20px',
-    fontFamily: '"Dank Mono", monospace'
+    fontFamily: 'Avenir, arial',
+    color: 'white',
+    fontSize: '30px',
+    lineHeight: 1.5
   },
   ul: {
-    listStyle: 'none',
-    paddingLeft: '20px',
+    paddingLeft: '50px',
     display: 'inline-block'
   },
   colors: {

@@ -5,9 +5,9 @@ export default ({ children, ...props }) => (
   <Query {...props}>
     {({ loading, error, data }) => {
       if (loading) {
-        return 'loading'
+        return <Text>'loading'</Text>
       }
-      if (error) return `Error!: ${error}`
+      if (error) return <Text>`Error!: ${error}`</Text>
       return children(data)
     }}
   </Query>

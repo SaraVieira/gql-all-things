@@ -10,8 +10,11 @@ const Root = styled.div([], {
 })
 
 const Half = styled(Box)`
+  position: relative;
   > * {
     max-width: 100%;
+    transform: none !important;
+    left: 0 !important;
   }
 `
 

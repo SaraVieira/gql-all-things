@@ -8,6 +8,7 @@ const Footer = styled.footer`
   text-align: right;
   width: 100vw;
   border-top: 1px solid #dc5f53;
+  background: rgb(1, 22, 39);
   display: flex;
   justify-content: space-between;
   position: absolute;

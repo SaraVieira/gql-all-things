@@ -21,6 +21,10 @@
     "raw-loader": "^0.5.1"
   },
   "dependencies": {
+    "animate-css-styled-components": "^1.0.0",
+    "graphql": "^14.0.0",
+    "graphql-anywhere": "^4.1.18",
+    "graphql-tag": "^2.9.2",
     "mdx-deck-code-surfer": "^0.4.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

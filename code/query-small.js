@@ -6,9 +6,9 @@ import { GET_MODAL } from './queries/'
 export default () => (
   <div>
     <Query query={GET_MODAL}>
-      {({ modal: { modalIsOpen } }) => (
-        <Modal isOpen={modalIsOpen}>
-          <h1>Of course they do. </h1>
+      {({ modal: { modalvisible } }) => (
+        <Modal visible={modalvisible}>
+          <Text>Of course they do. </Text>
         </Modal>
       )}
     </Query>

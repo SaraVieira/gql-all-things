@@ -8,16 +8,16 @@ export default () => (
   <Query query={MODAL}>
     {({ data, client }) => (
       <Fragment>
-        <button
+        <TouchableHighlight
           onClick={() =>
             client.writeData({
-              data: { modal: { isOpen: true } }
+              data: { modal: { visible: true } }
             })
           }
         >
-          A MODAL
-        </button>
-        <Modal isOpen={data.modalOpen}>YEAH SON</Modal>
+          <Text>A MODAL</Text>
+        </TouchableHighlight>
+        <Modal visible={data.modalOpen}>YEAH SON</Modal>
       </Fragment>
     )}
   </Query>

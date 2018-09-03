@@ -1,8 +1,8 @@
 export { default as theme } from './src/index'
-import { Head, Image } from 'mdx-deck'
+import { Head, Image, Appear } from 'mdx-deck'
 import nightOwl from "prism-react-renderer/themes/nightOwl"
 import { CodeSurfer } from "mdx-deck-code-surfer"
-import {LayoutNoFooter, CodeSanbox, Split, BGImage} from './src/index'
+import {LayoutNoFooter, Split, BGImage, Layout} from './src/index'
 
 
 
@@ -10,7 +10,38 @@ import {LayoutNoFooter, CodeSanbox, Split, BGImage} from './src/index'
   <title>GQL ALL THE THINGS</title>
 </Head>
 
+# 👋
+
+---
+
+# A story
+
+---
+
 # GQL ALL THE THINGS
+
+---
+
+# My name is Sara
+
+---
+
+export default Split
+
+<img src={require("file-loader!./images/yld.gif")}/>
+
+
+* Developer Advocate at YLD
+* Really into shitty movies
+* Really into football
+* I have stickers
+
+---
+export default Layout
+
+## STICKERS
+
+<BGImage src={require("file-loader!./images/stickers.jpg")}/>
 
 ---
 
@@ -26,11 +57,64 @@ export default Split
 
 ---
 
+# MANAGING LOCAL STATE WITH APOLLO
+
+---
+
+
+# Alert
+
+---
+
+
+# I don't like redux
+Dan is great tho...
+
+---
+
+export default Split
+
+<img src="https://media.graphcms.com//vwhtqmZS3Kg6PD5Ktxl6"/>
+
+* We got this awesome React project that is all Apollo and GraphQ, want to help?
+* That sounds awesome. What do you use for state management?
+* Redux.
+
+---
+
+# Why?
+
+---
+
+# GQL ALL THE THINGS
+
+---
+
+<img src={require("file-loader!./images/website.png")}/>
+
+---
+
+# How?
+
+---
+
+<img src={require("file-loader!./images/install.png")}/>
+
+---
+
 <CodeSurfer
   code={require("!raw-loader!./code/provider.js")}
   lang="jsx"
   theme={nightOwl}
 />
+
+---
+
+# Done
+
+---
+
+# Now state
 
 ---
 
@@ -42,11 +126,22 @@ export default Split
 
 ---
 
+
+# defaults
+Your base state. What you start with
+
+---
+
 <CodeSurfer
   code={require("!raw-loader!./code/defaults.js")}
   lang="js"
   theme={nightOwl}
 />
+
+---
+
+# resolvers
+This is here all the magic happens to retrieve and update your local data in the Apollo cache
 
 ---
 
@@ -58,11 +153,24 @@ export default Split
 
 ---
 
+# The mutation
+
+You know … The GQL part of the equation
+
+---
+
 <CodeSurfer
   code={require("!raw-loader!./code/mutation.js")}
   lang="js"
   theme={nightOwl}
 />
+
+---
+
+# The query
+
+You know … The GQL part of the equation
+
 
 ---
 
@@ -74,12 +182,30 @@ export default Split
 
 ---
 
+# We made the behind the scenes
+
+How do you actually call these things?
+
+---
+
+# THE QUERY COMPONENT
+
+---
 
 <CodeSurfer
   code={require("!raw-loader!./code/query-react.js")}
   lang="jsx"
   theme={nightOwl}
 />
+
+---
+
+# CAN WE MAKE THIS SMALLER?
+
+---
+
+# HELL YEAH
+## LET’S CREATE OUR VERY OWN QUERY COMPONENT
 
 ---
 
@@ -90,6 +216,10 @@ export default Split
 />
 ---
 
+# OUR CODE NOW
+
+---
+
 <CodeSurfer
   code={require("!raw-loader!./code/query-small.js")}
   lang="jsx"
@@ -97,11 +227,31 @@ export default Split
 />
 ---
 
+# Fits one slide
+
+---
+
+# BUT NO MODAL :(
+
+---
+
+# THE mutation COMPONENT
+
+---
 <CodeSurfer
   code={require("!raw-loader!./code/mutation-react.js")}
   lang="jsx"
   theme={nightOwl}
 />
+---
+
+# STILL THINK IT’S TOO MUCH CODE?
+
+---
+
+# APOLLO CONSUMER
+Used for very simple mutations to the cache
+
 ---
 
 <CodeSurfer
@@ -110,12 +260,34 @@ export default Split
   theme={nightOwl}
 />
 ---
+# Where is the mutation?
+
+It’s done on the fly! No need to define it before 🎉
+
+---
+
+# Can you make the query and mutation in one slide?
+
+---
+
+# Watch me
+
+---
 
 <CodeSurfer
   code={require("!raw-loader!./code/all.js")}
   lang="jsx"
   theme={nightOwl}
 />
+---
+
+# The modal does not close
+
+---
+
+# Fine…
+
+
 ---
 
 <CodeSurfer
