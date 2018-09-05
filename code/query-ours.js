@@ -1,4 +1,3 @@
-import React from 'react'
 import { Query } from 'react-apollo'
 
 export default ({ children, ...props }) => (

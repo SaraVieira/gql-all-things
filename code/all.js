@@ -1,24 +1,26 @@
 const MODAL = gql`
-  {
-    modalOpen @client
+  query Modal {
+    modal @client {
+      isOpen
+    }
   }
 `
 
 export default () => (
   <Query query={MODAL}>
     {({ data, client }) => (
-      <Fragment>
+      <View>
         <TouchableHighlight
           onClick={() =>
             client.writeData({
-              data: { modal: { visible: true } }
+              data: { modal: { isOpen: true } }
             })
           }
         >
           <Text>A MODAL</Text>
         </TouchableHighlight>
         <Modal visible={data.modalOpen}>YEAH SON</Modal>
-      </Fragment>
+      </View>
     )}
   </Query>
 )

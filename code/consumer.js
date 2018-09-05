@@ -1,4 +1,3 @@
-import React from 'react'
 import { ApolloConsumer } from 'react-apollo'
 
 export default () => (
@@ -7,7 +6,7 @@ export default () => (
       <TouchableHighlight
         onClick={() =>
           cache.writeData({
-            data: { modal: { visible: true } }
+            data: { modal: { isOpen: true } }
           })
         }
       >

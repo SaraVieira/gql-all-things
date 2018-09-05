@@ -2,6 +2,7 @@ const changeState = (client, value) =>
   client.writeData({
     data: { modalOpen: value }
   })
+
 export default () => (
   <Query query={MODAL}>
     {({ data, client }) => (

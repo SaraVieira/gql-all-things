@@ -1,6 +1,6 @@
 export const defaults = {
   modal: {
-    modalvisible: false,
+    isOpen: false,
     _typename: 'modal'
   }
 }
