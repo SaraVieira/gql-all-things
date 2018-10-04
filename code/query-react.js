@@ -5,14 +5,10 @@ export default () => (
   <Query query={GET_MODAL}>
     {({ loading, error, modal: { isOpen } }) => {
       if (loading) {
-        return <Text>'loading'</Text>
+        return 'loading'
       }
-      if (error) return <Text>`Error!: ${error}`</Text>
-      return (
-        <Modal visible={isOpen}>
-          <Text>Of course they do </Text>
-        </Modal>
-      )
+      if (error) return `Error!: ${error}`
+      return <Modal isOpen={isOpen}>Of course they do</Modal>
     }}
   </Query>
 )

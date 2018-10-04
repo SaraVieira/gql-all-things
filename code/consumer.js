@@ -3,15 +3,15 @@ import { ApolloConsumer } from 'react-apollo'
 export default () => (
   <ApolloConsumer>
     {cache => (
-      <TouchableHighlight
+      <button
         onClick={() =>
           cache.writeData({
             data: { modal: { isOpen: true } }
           })
         }
       >
-        <Text>Everyone loves modals right ?</Text>
-      </TouchableHighlight>
+        Everyone loves modals right ?
+      </button>
     )}
   </ApolloConsumer>
 )

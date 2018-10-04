@@ -18,7 +18,7 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
-    <span>React Native EU 🇵🇱</span>
+    <span>reactjsday 🇮🇹</span>
     <span>@NIkkitaFTW</span>
   </Footer>
 )

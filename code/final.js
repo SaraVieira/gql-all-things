@@ -7,14 +7,12 @@ export default () => (
   <Query query={MODAL}>
     {({ data, client }) => (
       <Fragment>
-        <TouchableHighlight onClick={() => changeState(client, true)}>
-          A MODAL
-        </TouchableHighlight>
+        <button onClick={() => changeState(client, true)}>A MODAL</button>
         <Modal
-          visible={data.modalOpen}
+          isOpen={data.modalOpen}
           onRequestClose={() => changeState(client, false)}
         >
-          <Text>YEAH SON</Text>
+          YEAH SON
         </Modal>
       </Fragment>
     )}
