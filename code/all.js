@@ -4,21 +4,22 @@ const MODAL = gql`
   }
 `
 
-export default () => (
-  <Query query={MODAL}>
-    {({ data, client }) => (
-      <Fragment>
-        <TouchableHighlight
-          onClick={() =>
-            client.writeData({
-              data: { modal: { visible: true } }
-            })
-          }
-        >
-          <Text>A MODAL</Text>
-        </TouchableHighlight>
-        <Modal visible={data.modalOpen}>YEAH SON</Modal>
-      </Fragment>
-    )}
-  </Query>
-)
+export default () => {
+  const { data } = useQuery(MODAL)
+  const client = useApolloClient()
+
+  return (
+    <>
+      <button
+        onClick={() =>
+          client.writeData({
+            data: { modal: { visible: true } }
+          })
+        }
+      >
+        A MODAL
+      </button>
+      <Modal visible={data.modalOpen}>YEAH SON</Modal>
+    </>
+  )
+}

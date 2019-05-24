@@ -1,20 +1,14 @@
 export { default as theme } from './src/index'
 import { Head } from 'mdx-deck'
-import nightOwl from "prism-react-renderer/themes/nightOwl"
-import { CodeSurfer } from "mdx-deck-code-surfer"
-import { Layout, Split, BGImage, Image} from './src/index'
-
-
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+import { Layout, Split, BGImage, Image } from './src/index'
 
 <Head>
   <title>GQL ALL THE THINGS</title>
 </Head>
 
 # 👋
-
----
-
-# A story
 
 ---
 
@@ -26,22 +20,17 @@ import { Layout, Split, BGImage, Image} from './src/index'
 
 ---
 
-export default Split
+## Developer at CodeSandbox
 
-<img src={require("file-loader!./images/yld.gif")}/>
+## Really into shitty movies
 
-
-* Developer Advocate at YLD
-* Really into shitty movies
-* Really into football
-* I have stickers
+## Really into football
 
 ---
+
 export default Layout
 
 ## STICKERS
-
-<BGImage src={require("file-loader!./images/stickers.jpg")}/>
 
 ---
 
@@ -51,7 +40,7 @@ export default Layout
 
 export default Split
 
-<img src={require("file-loader!./images/me.jpg")}/>
+<img src={require('file-loader!./images/me.jpg')} />
 
 # GraphQL is Bae
 
@@ -61,24 +50,27 @@ export default Split
 
 ---
 
-
 # Alert
 
 ---
 
-
 # I don't like redux
+
 Dan is great tho...
+
+---
+
+# I'm sorry Dan
 
 ---
 
 export default Split
 
-<img src="https://media.graphcms.com//vwhtqmZS3Kg6PD5Ktxl6"/>
+<img src="https://media.graphcms.com//vwhtqmZS3Kg6PD5Ktxl6" />
 
-* We got this awesome React project that is all Apollo and GraphQ, want to help?
-* That sounds awesome. What do you use for state management?
-* Redux.
+- We got this awesome React project that is all Apollo and GraphQL, want to help?
+- That sounds awesome. What do you use for state management?
+- Redux.
 
 ---
 
@@ -90,7 +82,7 @@ export default Split
 
 ---
 
-<img src={require("file-loader!./images/website.png")}/>
+<img src={require('file-loader!./images/website.png')} />
 
 ---
 
@@ -98,12 +90,16 @@ export default Split
 
 ---
 
-<img src={require("file-loader!./images/install.png")}/>
+<CodeSurfer
+  code={require('!raw-loader!./code/install.js')}
+  lang="bash"
+  theme={nightOwl}
+/>
 
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/provider.js")}
+  code={require('!raw-loader!./code/provider.js')}
   lang="jsx"
   theme={nightOwl}
 />
@@ -119,21 +115,21 @@ export default Split
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/state.js")}
+  code={require('!raw-loader!./code/state.js')}
   lang="jsx"
   theme={nightOwl}
 />
 
 ---
 
-
 # defaults
+
 Your base state. What you start with
 
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/defaults.js")}
+  code={require('!raw-loader!./code/defaults.js')}
   lang="js"
   theme={nightOwl}
 />
@@ -141,12 +137,13 @@ Your base state. What you start with
 ---
 
 # resolvers
+
 This is here all the magic happens to retrieve and update your local data in the Apollo cache
 
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/resolvers.js")}
+  code={require('!raw-loader!./code/resolvers.js')}
   lang="js"
   theme={nightOwl}
 />
@@ -160,7 +157,7 @@ You know … The GQL part of the equation
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/mutation.js")}
+  code={require('!raw-loader!./code/mutation.js')}
   lang="js"
   theme={nightOwl}
 />
@@ -169,13 +166,12 @@ You know … The GQL part of the equation
 
 # The query
 
-You know … The GQL part of the equation
-
+You know … The other GQL part of the equation
 
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/query.js")}
+  code={require('!raw-loader!./code/query.js')}
   lang="jsx"
   theme={nightOwl}
 />
@@ -193,7 +189,7 @@ How do you actually call these things?
 ---
 
 <CodeSurfer
-  code={require("!raw-loader!./code/query-react.js")}
+  code={require('!raw-loader!./code/query-react.js')}
   lang="jsx"
   theme={nightOwl}
 />
@@ -205,6 +201,7 @@ How do you actually call these things?
 ---
 
 # HELL YEAH
+
 ## LET’S CREATE OUR VERY OWN QUERY COMPONENT
 
 ---
@@ -238,6 +235,7 @@ How do you actually call these things?
 # THE mutation COMPONENT
 
 ---
+
 <CodeSurfer
   code={require("!raw-loader!./code/mutation-react.js")}
   lang="jsx"
@@ -250,6 +248,7 @@ How do you actually call these things?
 ---
 
 # APOLLO CONSUMER
+
 Used for very simple mutations to the cache
 
 ---
@@ -287,7 +286,6 @@ It’s done on the fly! No need to define it before 🎉
 
 # Fine…
 
-
 ---
 
 <CodeSurfer
@@ -297,18 +295,22 @@ It’s done on the fly! No need to define it before 🎉
 />
 ---
 
-export default Layout
-
-## [https://letslearngraphql.com](https://letslearngraphql.com)
-
-<BGImage src={require("file-loader!./images/lets.png")}/>
+[https://codesandbox.io/s/black-water-4x2plk2v3w](https://codesandbox.io/s/black-water-4x2plk2v3w)
 
 ---
 
 export default Layout
 
-<Image src={require("file-loader!./images/yay.jpg")}/>
+## [https://letslearngraphql.com](https://letslearngraphql.com)
 
-# Thank You 🇵🇱
+<BGImage src={require('file-loader!./images/lets.png')} />
+
+---
+
+export default Layout
+
+<Image src={require('file-loader!./images/yay.jpg')} />
+
+# Thank You 🇦🇲
+
 ### [https://gql-all-things.now.sh/](https://gql-all-things.now.sh/)
-

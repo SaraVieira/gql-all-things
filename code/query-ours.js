@@ -1,14 +1,10 @@
 import React from 'react'
-import { Query } from 'react-apollo'
+import { useQuery, useApolloClient } from 'react-apollo-hooks'
 
-export default ({ children, ...props }) => (
-  <Query {...props}>
-    {({ loading, error, data }) => {
-      if (loading) {
-        return <Text>'loading'</Text>
-      }
-      if (error) return <Text>`Error!: ${error}`</Text>
-      return children(data)
-    }}
-  </Query>
-)
+export default ({ children, ...props }) => {
+  const { data, loading, error } = useQuery(...props)
+  if (loading) return <span>'loading'</span>
+  if (error) return <span>`Error!: ${error}`</span>
+
+  return data
+}

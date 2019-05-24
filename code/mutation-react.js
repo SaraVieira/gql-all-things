@@ -1,13 +1,9 @@
 import React from 'react'
-import { Mutation } from 'react-apollo'
+import { useMutation } from 'react-apollo-hooks'
 import { OPEN_MODAL } from './queries/'
 
-export default () => (
-  <Mutation mutation={OPEN_MODAL}>
-    {openModal => (
-      <TouchableHighlight onClick={openModal}>
-        <Text> Everyone loves modals right?</Text>
-      </TouchableHighlight>
-    )}
-  </Mutation>
-)
+export default () => {
+  const openModal = useMutation(OPEN_MODAL)
+
+  return <button onClick={openModal}>Everyone loves modals right?</button>
+}

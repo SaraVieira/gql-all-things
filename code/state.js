@@ -8,6 +8,8 @@ export const client = new ApolloClient({
 
 const App = () => (
   <ApolloProvider client={client}>
-    <Main />
+    <ApolloHooksProvider client={client}>
+      <Main />
+    </ApolloHooksProvider>
   </ApolloProvider>
 )

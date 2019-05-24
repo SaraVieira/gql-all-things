@@ -1,18 +1,14 @@
-import React from 'react'
-import { ApolloConsumer } from 'react-apollo'
-
-export default () => (
-  <ApolloConsumer>
-    {cache => (
-      <TouchableHighlight
-        onClick={() =>
-          cache.writeData({
-            data: { modal: { visible: true } }
-          })
-        }
-      >
-        <Text>Everyone loves modals right ?</Text>
-      </TouchableHighlight>
-    )}
-  </ApolloConsumer>
-)
+export default () => {
+  const client = useApolloClient()
+  return (
+    <button
+      onClick={() =>
+        client.writeData({
+          data: { modal: { visible: true } }
+        })
+      }
+    >
+      Everyone loves modals right ?
+    </button>
+  )
+}

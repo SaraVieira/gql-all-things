@@ -3,7 +3,7 @@ export const resolvers = {
     openModal: (_, params, { cache }) => {
       const data = {
         modal: {
-          modalvisible: true,
+          visible: true,
           _typename: 'modal'
         }
       }
