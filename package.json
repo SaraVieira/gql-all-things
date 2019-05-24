@@ -6,13 +6,11 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx --no-html",
+    "now-build": "mdx-deck build deck.mdx --no-html && cp -r images dist/ && cp -r code dist/",
     "format": "prettier --write '**/*.js'",
     "posttest": "npm run format"
   },
   "author": "Sara Vieira",
-  "now": {
-    "alias": "gql-all-things"
-  },
   "license": "MIT",
   "devDependencies": {
     "file-loader": "^2.0.0",

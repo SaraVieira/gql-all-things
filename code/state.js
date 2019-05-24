@@ -1,5 +1,5 @@
 export const client = new ApolloClient({
-  uri: 'https:"/figma-graphql.now.sh/graphql',
+  uri: 'https://figma-graphql.now.sh/graphql',
   clientState: {
     defaults,
     resolvers
