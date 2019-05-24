@@ -14,8 +14,8 @@
       "dest": "/images/$1"
     },
     {
-      "src": "^/snippets/(.*)",
-      "dest": "/snippets/$1"
+      "src": "^/code/(.*)",
+      "dest": "/code/$1"
     },
     {
       "src": "index.html",
