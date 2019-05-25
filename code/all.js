@@ -19,7 +19,7 @@ export default () => {
       >
         A MODAL
       </button>
-      <Modal visible={data.modalOpen}>YEAH SON</Modal>
+      <Modal visible={data.modal.visible}>YEAH SON</Modal>
     </>
   )
 }

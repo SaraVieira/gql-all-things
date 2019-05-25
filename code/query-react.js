@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal'
-import { Query } from 'react-apollo'
+import { useQuery } from 'react-apollo-hooks'
 import { GET_MODAL } from './queries'
 
 export default () => {
@@ -9,10 +9,9 @@ export default () => {
     loading,
     error
   } = useQuery(GET_MODAL)
-  if (loading) {
-    return <span>loading</span>
-  }
+  if (loading) return <span>loading</span>
   if (error) return <span>Error!: ${error}</span>
+
   return (
     <Modal visible={modal.visible}>
       <span>Of course they do </span>
